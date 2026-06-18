@@ -17,7 +17,7 @@ A lightweight, collaborative document editor built for the Ajaia LLC engineering
 
 ## Architecture Diagram
 
-![AjAia Docs Architecture Diagram](./architecture.png)
+![AjAia Docs Architecture Diagram](public\architecture.png)
 
 *(Note: If the image above does not load, please save your screenshot as `architecture.png` in the root folder! Alternatively, here is the text-based Mermaid version of the exact same diagram:)*
 
