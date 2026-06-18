@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--color-zinc-50);
+  --color-foreground: var(--color-zinc-900);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    @apply antialiased;
+  }
+}
+
+/* Tiptap editor styles */
+.ProseMirror {
+  min-height: 500px;
+  outline: none;
+  padding: 1rem;
+}
+
+.ProseMirror p.is-editor-empty:first-child::before {
+  color: theme('colors.zinc.400');
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  pointer-events: none;
+}
+
+.ProseMirror h1 { @apply text-4xl font-bold mt-6 mb-4; }
+.ProseMirror h2 { @apply text-3xl font-semibold mt-5 mb-3; }
+.ProseMirror h3 { @apply text-2xl font-semibold mt-4 mb-2; }
+.ProseMirror p { @apply my-2 leading-relaxed; }
+.ProseMirror ul { @apply list-disc list-inside my-2; }
+.ProseMirror ol { @apply list-decimal list-inside my-2; }
+.ProseMirror a { @apply text-blue-600 underline; }
+.ProseMirror blockquote { @apply border-l-4 border-zinc-300 pl-4 italic my-4 text-zinc-600; }
